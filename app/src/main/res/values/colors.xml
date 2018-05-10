@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#22216D</color>
+    <color name="colorPrimaryDark">#18175B</color>
+    <color name="colorAccent">#8E93BE</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_divider">#40FFFFFF</color>
+    <color name="color_transparent">#0000</color>
+    <color name="color_forgot_pass_text">#383870</color>
+    <color name="color_forgot_bg">#80383870</color>
+    <color name="color_green">#5CBE4F</color>
+    <color name="color_nav_tool">#22216D</color>
+    <color name="color_nav_back">#18175B</color>
+    <color name="color_colibration_scroll">#0A133A</color>
+    <color name="color_colibration_text">#3E3E49</color>
+    <color name="color_add_pausetask">#c8cbe8</color>
+    <color name="color_devider_pausetask">#8E93BE</color>
+
+    <color name="color_card_background">#c8cbe8</color>
+
+    <color name="color_red">#ff3346</color>
+    <color name="color_yellow">#f9ff33</color>
+    <color name="color_blue">#3396ff</color>
+    <color name="color_orange">#ed990f</color>
+    <color name="color_light_blue">#33f6ff</color>
+    <color name="color_pink">#fc03ad</color>
+    <color name="color_grey">#40FFFFFF</color>
+
+
+</resources>

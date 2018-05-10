@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_advance_wellness"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_bg"
+    android:orientation="vertical"
+    tools:context="com.mxi.myinnerpharmacy.activity.AdvancedWellness">
+
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.mxi.myinnerpharmacy.font.BoldMyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/advanced_wellness"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/color_white" />
+
+        <com.mxi.myinnerpharmacy.font.RegularMyTextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_margin="10dp"
+            android:gravity="center|right"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_white" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/white_rounded_rectangle"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="60dp"
+                    android:gravity="center"
+                    android:text="@string/hour_sleep"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:id="@+id/tv_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|right"
+                    android:drawableRight="@mipmap/drop_down_arrow"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center|left"
+                    android:text="@string/sugary_drunk"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:id="@+id/tv_sugary"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|right"
+                    android:drawableRight="@mipmap/drop_down_arrow"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/minuts_spent"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/play"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:id="@+id/tv_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="0.5"
+                    android:drawableRight="@mipmap/drop_down_arrow"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/exercise"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:id="@+id/tv_exercise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="0.5"
+                    android:drawableRight="@mipmap/drop_down_arrow"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/stillness"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:id="@+id/tv_stillness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="0.5"
+                    android:drawableRight="@mipmap/drop_down_arrow"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/minutes"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tv"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:id="@+id/tv_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="0.5"
+                    android:drawableRight="@mipmap/drop_down_arrow"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/computer"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:id="@+id/tv_computer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="0.5"
+                    android:drawableRight="@mipmap/drop_down_arrow"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/smart_phone"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:id="@+id/tv_smart_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="0.5"
+                    android:drawableRight="@mipmap/drop_down_arrow"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="60dp"
+                    android:gravity="center"
+                    android:text="@string/portions"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:id="@+id/tv_portion"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|right"
+                    android:drawableRight="@mipmap/drop_down_arrow"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="60dp"
+                    android:gravity="center"
+                    android:text="@string/portions_of"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                    android:id="@+id/tv_portions"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|right"
+                    android:drawableRight="@mipmap/drop_down_arrow"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_button">
+
+        <com.mxi.myinnerpharmacy.font.RegularMyTextView
+            android:id="@+id/tv_wellness_done"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/add_graph"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+
+</LinearLayout>

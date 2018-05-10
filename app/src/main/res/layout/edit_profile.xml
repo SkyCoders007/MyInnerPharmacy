@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profile_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:src="@mipmap/uploadpic"
+                        app:civ_border_color="#FFF"
+                        app:civ_border_width="1dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_edit"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@mipmap/ic_edit" />
+            </FrameLayout>
+
+            <com.mxi.myinnerpharmacy.font.RegularMyEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName|textCapSentences"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/color_white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|right|top"
+            android:layout_margin="6dp"
+            android:background="@mipmap/ic_delete" />
+    </FrameLayout>
+
+    <com.mxi.myinnerpharmacy.font.Button
+        android:id="@+id/btn_save"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/white_rectangle"
+        android:elevation="20dp"
+        android:text="@string/edit_save_change"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_white" />
+
+</LinearLayout>

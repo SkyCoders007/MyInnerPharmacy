@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="5">
+
+        <com.mxi.myinnerpharmacy.font.BoldMyTextView
+            android:id="@+id/tv_screen_title_resource_journal_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="@string/rj_resource_journal_detail"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/color_white" />
+
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <com.mxi.myinnerpharmacy.font.BoldMyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="@string/title_resource_journal_detail"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_white" />
+
+            <com.mxi.myinnerpharmacy.font.BoldMyTextView
+                android:layout_marginLeft="25dp"
+                android:id="@+id/tv_title_resource_journal_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="Title is Here"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.8"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <com.mxi.myinnerpharmacy.font.BoldMyTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/description_resource_journal_detail"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_white" />
+
+            <com.mxi.myinnerpharmacy.font.BoldMyTextView
+                android:id="@+id/tv_description_resource_journal_detail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_corner_rectangle"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="The Way we wan to leave"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_audio_resource_journal_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <com.mxi.myinnerpharmacy.font.BoldMyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:text="@string/audio_dscr_resource_journal_detail"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_white" />
+
+                <com.mxi.myinnerpharmacy.font.BoldMyTextView
+                    android:id="@+id/tv_audio_name_resource_journal_detail"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:text="Audio is here"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_white" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:layout_marginRight="5dp">
+
+                    <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                        android:id="@+id/tv_play_resource_journal_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/play"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:layout_marginLeft="5dp">
+
+                    <com.mxi.myinnerpharmacy.font.RegularMyTextView
+                        android:id="@+id/tv_pause_resource_journal_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/pause"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

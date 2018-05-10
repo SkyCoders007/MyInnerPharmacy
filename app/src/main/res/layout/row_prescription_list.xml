@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.mxi.myinnerpharmacy.font.RegularMyTextView
+            android:id="@+id/tv_row_pres_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/advance_pres"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_colibration_text"/>
+
+        <ImageView
+            android:id="@+id/iv_edit_row_prescription"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/tv_row_pres_list"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/iv_delete_row_prescription"
+            android:layout_toStartOf="@+id/iv_delete_row_prescription"
+            android:src="@mipmap/edit" />
+
+        <ImageView
+            android:id="@+id/iv_delete_row_prescription"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_row_pres_list"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/delete" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_row_prescription_list"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary" />
+</LinearLayout>
